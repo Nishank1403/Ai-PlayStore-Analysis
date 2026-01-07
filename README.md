@@ -13,6 +13,7 @@ An end-to-end data engineering project that processes 2.2M+ app records and uses
 - **Automated Narrative:** The backend sends processed market trends to the Groq API, which generates real-time "Breaking News" headlines for the visualization.
 - **Data Transformation:** Cleaned and clustered 50+ app categories into 6 strategic market sectors.
 - **Scalability:** Engineered to handle massive CSV datasets using optimized Pandas operations.
+``.
 
 ## 📈 Final Visualization
 https://public.flourish.studio/visualisation/27055894/
