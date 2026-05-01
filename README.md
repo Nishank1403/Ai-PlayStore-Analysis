@@ -3,6 +3,10 @@
 ### 📌 Overview
 An end-to-end data engineering and analytics project that processes 2.2M+ Google Play Store records to uncover market trends and generate actionable insights. The system integrates Generative AI (Llama 3.3 via Groq) to automatically transform structured data into human-readable narratives and real-time “market intelligence” summaries.
 
+### 🏗️ Architecture Overview
+<img width="1536" height="1024" alt="ChatGPT Image Apr 30, 2026, 06_51_11 PM" src="https://github.com/user-attachments/assets/ed2f926c-4b9f-45fb-9aec-c28fad05febe" />
+
+
 ### 🛠️ Tech Stack
 - **Language:** Python (Pandas)
 - **AI / LLM:** Groq API (Llama-3.3-70B)
