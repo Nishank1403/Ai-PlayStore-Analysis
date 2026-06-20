@@ -4,6 +4,10 @@
 
 A data processing project that analyzes 2.2M+ Google Play Store records to find market trends. The pipeline cleans and clusters app category data, then uses Groq's API (Llama 3.3) to turn the clustered data into short, human-readable market insight summaries.
 
+### 🏗️ Architecture Overview
+
+<img width="1536" height="1024" alt="ChatGPT Image Apr 30, 2026, 06_51_11 PM" src="https://github.com/user-attachments/assets/ed2f926c-4b9f-45fb-9aec-c28fad05febe" />
+
 ### 🛠️ Tech Stack
 
 - **Language:** Python (Pandas)
