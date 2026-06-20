@@ -1,9 +1,9 @@
+import os
 import google.generativeai as genai
-import pandas as pd
 import json
 
-# Paste your key here
-genai.configure(api_key="YOUR_GEMINI_API_KEY_HERE")
+genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 def get_market_clusters(categories):
@@ -18,7 +18,11 @@ def get_market_clusters(categories):
     clean_json = response.text.replace('```json', '').replace('```', '').strip()
     return json.loads(clean_json)
 
-# Test it with a few categories
-unique_categories = ['Dating', 'Finance', 'Weather', 'Action', 'Education', 'Business']
-clusters = get_market_clusters(unique_categories)
-print(clusters)
+
+# Note: This script was an early experiment using Gemini for category clustering.
+# I later moved the active pipeline to Groq's API (Llama 3.3) after hitting
+# rate limits on Gemini's free tier — see process_data.ipynb for the current version.
+if __name__ == "__main__":
+    unique_categories = ['Dating', 'Finance', 'Weather', 'Action', 'Education', 'Business']
+    clusters = get_market_clusters(unique_categories)
+    print(clusters)
